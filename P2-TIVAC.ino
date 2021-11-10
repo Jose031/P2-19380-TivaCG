@@ -37,6 +37,9 @@ File archivo; // Librería utlizada para crear un archivo en la SD
 //**********************************************************************************************************************
 // Defincion de Pines
 //**********************************************************************************************************************
+// Pines utilizados para los botones de leer y guardad.
+#define btn1 PF_4
+#define btn2 PF_0
 //Pines LCD
 #define LCD_RST PD_0
 #define LCD_CS PD_1
