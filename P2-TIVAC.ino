@@ -51,6 +51,12 @@ int buzzerPin = PC_4;
 //**********************************************************************************************************************
 // Prototipo de Funciones
 //**********************************************************************************************************************
+void BPM1(void); // Función encargada de recibir el valor del sensor de BPM enviado por el ESP32.
+void btnleer(void); // Función encargada de alamacenar el valor BPM en la memoria SD mediante el botón 2.
+void writeSD(void); // Función encargada de escribri y almacenar el valor BPM en la memoria SD mediante el botón 2.
+void LCDD(void); // Función con la cual se establece el dieseño que tendra la pantalla SD.
+void Sonido1(void); // Función que establece el sonido buzzer cuando se lea un valor con el botón 1.
+void Sonido2(void); // Función que establece el sonido buzzer cuando se lea un valor con el botón 2.
 //------------------ Funciones que permiten el funcionamiento de la pantalla LCD ------------------------------------
 void LCD_Init(void);
 void LCD_CMD(uint8_t cmd);
