@@ -146,6 +146,36 @@ void writeSD(void) {
   archivo.print("Ritmo Cardiaco: ");
   archivo.println(BPM);
 }
+void LCDD(void) {
+  LCD_Clear(0xFFFF); // Establecer el fondo de la pantalla
+  // Impresión de texto
+  String text1 = "Ritmo Cardiaco:";
+  LCD_Print(text1, 40, 20, 2.5,  0x0000,  0xFFFF);
+  LCD_Print(BPM, 120, 50, 2.5,  0x0000,  0xFFFF);
+  // Impresión de imagenes Bitmap
+  LCD_Bitmap(0, 210, 32, 22, BTN);
+  LCD_Bitmap(285, 210, 32, 22, BTN);
+  LCD_Bitmap(40, 200, 32, 32, check);
+  LCD_Bitmap(255, 210, 32, 18, GG);
+  LCD_Bitmap(0, 160, 32, 27, ECG2);
+  delay(100);
+  LCD_Bitmap(40, 160, 32, 27, ECG2);
+  delay(200);
+  LCD_Bitmap(80, 160, 32, 27, ECG2);
+  delay(200);
+  LCD_Bitmap(120, 160, 32, 27, ECG2);
+  delay(200);
+  LCD_Bitmap(160, 160, 32, 27, ECG2);
+  delay(200);
+  LCD_Bitmap(200, 160, 32, 27, ECG2);
+  delay(100);
+  LCD_Bitmap(240, 160, 32, 27, ECG2);
+  delay(100);
+  LCD_Bitmap(280, 160, 32, 27, ECG2);
+  delay(100);
+  LCD_Bitmap(320, 160, 32, 27, ECG2);
+  delay(100);
+}
 //***************************************************************************************************************************************
 // Función para inicializar LCD
 //***************************************************************************************************************************************
