@@ -176,6 +176,23 @@ void LCDD(void) {
   LCD_Bitmap(320, 160, 32, 27, ECG2);
   delay(100);
 }
+void Sonido1(void) { // Función que establece el sonido buzzer cuando se lea un valor con el botón 1.
+  tone(buzzerPin, 988, 250);
+  delay(400);
+  tone(buzzerPin, 880, 250);
+  delay(400);
+  tone(buzzerPin, 988, 250);
+  delay(1000);
+}
+void Sonido2(void) { // Función que establece el sonido buzzer cuando se lea un valor con el botón 2.
+  tone(buzzerPin, 988, 250);
+  delay(400);
+  tone(buzzerPin, 880, 250);
+  delay(400);
+  tone(buzzerPin, 784, 1000);
+  delay(1000);
+  tone(buzzerPin, 880, 1000);
+  delay(1000);
 //***************************************************************************************************************************************
 // Función para inicializar LCD
 //***************************************************************************************************************************************
