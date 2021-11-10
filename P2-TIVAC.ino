@@ -46,6 +46,8 @@ File archivo; // Librería utlizada para crear un archivo en la SD
 #define LCD_RS PD_2
 #define LCD_WR PD_3
 #define LCD_RD PE_1
+// Pin utilizado para el buzzer
+int buzzerPin = PC_4;
 //**********************************************************************************************************************
 // Prototipo de Funciones
 //**********************************************************************************************************************
